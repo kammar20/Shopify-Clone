@@ -10,12 +10,133 @@
     <link rel="shortcut icon" href="./img/shopify-bag.png" type="image/x-icon">
     <!--! Font Awesome -->
     <script src="https://kit.fontawesome.com/8c44950f49.js" crossorigin="anonymous"></script>
+    <!--! Googel Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
     <!--! Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--! Tailwind Custom CSS  -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+
+            body{
+                font-family: 'Inter', sans-serif;
+            }  
+
+            .bigWrapper{
+                max-width: 1600px;
+                margin:0 auto;
+            }
+
+            li{
+                list-style-type:none ;
+                color:#42474c;
+                font-weight:600;        
+                cursor: pointer;
+                letter-spacing:.5px;
+                transition:all .2s ease-in;
+            }
+
+            li:hover{
+                color:#212326;
+            }
+        } 
+    </style>
+
+    <!--! tailwind Config  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '481px',
+                    md: '768px',
+                    lg: '1031px',
+                    xl: '1200px',
+                    "2xl": '1440px',
+                },
+                extend: {
+                    colors: {
+                        white: '#ffffff',
+                        black: '#000000',
+                        greenColor: "#008060",
+                        midGreen: "#004c3f",
+                        darkGreen: "#002e25",
+                        lightPink: "#fbf7ed",
+                        exploreBg: "#f3fcf4",
+                        paraColor: "#6b7177",
+                        darkPara: "#42474c",
+                        headingColor: "#212326",
+                        footText: "#b6babf",
+                    },
+                },
+            },
+        };
+    </script>
 </head>
 
 <body>
+    <!--! Big Wrapper  -->
+    <div class="bigWrapper">
 
+        <!--. Header -->
+        <header class="head bg-lightPink">
+            <!--! nav Wrapper -->
+            <div class="navWrapper max-w-[1350px] mx-auto ">
+                <!--/ Navbar  -->
+                <nav
+                    class="navbar  flex justify-between item-center py-5 px-3 sm:px-5 md:px-12 lg:px-6 xl:px-3.5 2xl:px-0 ">
+                    <!--. nav Left -->
+                    <div class="navLeft flex item-center">
+                        <!-- logo -->
+                        <div class="mr-8  self-center xl:ml-3.5 2xl:ml-0">
+                            <img src="./img/logo.png" alt="" class="w-[111px] xl:w-[121px]">
+                        </div>
+
+                        <!-- nav Menu -->
+                        <ul class="flex self-center hidden lg:flex">
+                            <li class="mx-3.5">Start <i class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
+                            <li class="mx-3.5">Sell <i class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
+                            <li class="mx-3.5">Market <i class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
+                            <li class="mx-3.5">Manage <i class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
+                        </ul>
+                    </div>
+
+                    <!--. nav Right  -->
+                    <div class="navRight flex item-center">
+                        <!-- nav menu -->
+                        <ul class="flex self-center">
+                            <li class="mx-3.5 hidden lg:flex">Pricing</li>
+                            <li class="mx-3.5 hidden lg:block">Learn <i
+                                    class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
+                            <li class="mx-3.5">Log in</li>
+                        </ul>
+
+                        <!-- nav button -->
+                        <div class="mx-3.5 self-center hidden lg:flex 2xl:mr-0">
+                            <a href="#"
+                                class="text-white font-bold bg-greenColor px-4 py-2.5 rounded hover:bg-midGreen transition-all duration-300 ease-in shadow-xl hover:shadow-2xl">Try
+                                for free</a>
+                        </div>
+
+                        <!-- hamburger menu -->
+                        <div class="lg:hidden self-center sm:ml-3 ">
+                            <i class="fa-solid fa-bars text-xl text-headingColor"></i>
+                        </div>
+
+                    </div>
+                </nav>
+                <!--/ Navbar End  -->
+            </div>
+            <!--! nav Wrapper End -->
+        </header>
+        <!--. Header End -->
+
+    </div>
+    <!--! Big Wrapper End -->
 </body>
 
 </html>
