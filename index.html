@@ -157,7 +157,7 @@
                             <input type="email" name="email" id="email" placeholder="Enter your email address"
                                 class="w-[100%]  border-solid border-[1.5px]  border-paraColor  rounded p-3 mb-2 focus:outline-none focus:border-none focus:ring-2 focus:ring-greenColor sm:mb-0 sm:w-[67%] xl:w-[70%]">
                             <input type="button" value="Try for free"
-                                class="w-[100%] bg-greenColor p-3 rounded text-white font-semibold shadow-xl sm:w-[30%] xl:w-[27%]">
+                                class="w-[100%] bg-greenColor p-3 rounded text-white font-semibold shadow-xl sm:w-[30%] xl:w-[27%] hover:bg-midGreen transition-all duration-300 ease-in shadow-xl hover:shadow-2xl">
                         </form>
 
                         <p class="text-xs text-darkPara leading-5 xl:w-[90%]">Try Shopify free for 14 days, no credit
@@ -179,113 +179,207 @@
         <!--/ Header End -->
 
         <!--/ Business Section -->
-        <section class="business  bg-midGreen xl:py-20">
+        <section class="business  bg-midGreen py-14 md:py-20 xl:py-20 2xl:py-24">
             <!--! Business Container  -->
-            <div class="businessContainer max-w-[1350px] mx-auto ">
+            <div class="businessContainer max-w-[1350px] mx-auto px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-0">
 
                 <!--* Business Heading -->
-                <main class="heading">
+                <main class="heading 2xl:flex 2xl:justify-between 2xl:mb-20">
                     <!-- left -->
-                    <div class="left">
-                        <h2 class="text-[28px] text-white">Bring your business online</h2>
-                        <p> Create an ecommerce website backed by powerful tools that help you find customers, drive
+                    <div class="left 2xl:w-[75%] ">
+                        <h2 class="text-[28px] text-white mb-5 leading-8 xl:text-[40px]">Bring your business online</h2>
+                        <p class="text-base text-white mb-4 2xl:mb-0"> Create an ecommerce website backed by powerful
+                            tools that
+                            help
+                            you find
+                            customers, drive
                             sales, and manage your day-to-day.</p>
                     </div>
 
                     <!-- right -->
-                    <div class="right">
+                    <div class="right text-white mb-10 font-semibold 2xl:w-[20%]  2xl:mb-0 self-end 2xl:text-right ">
                         <a href="#">Explore more examples </a>
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class=" fa-solid fa-arrow-right-long"></i>
                     </div>
                 </main>
 
                 <!--* Portfolio Container -->
-                <main class="portfolio-container">
+                <main class="portfolio-container flex flex-wrap justify-between mb-24">
                     <!-- portfolio 1 -->
-                    <div>
-                        <img src="./img/business-1.jpg" alt="">
-                        <p>FOOD & DRINK</p>
-                        <h3>Blue Tokai</h3>
+                    <div class="w-[47%] mb-10 sm:w-[48%] md:w-[32%] lg:w-[24%] xl:w-[19%]">
+                        <img src="./img/business-1.jpg" alt="" class="mb-3">
+                        <p class="text-sm font-semibold text-white">FOOD & DRINK</p>
+                        <h3 class="text-white">Blue Tokai</h3>
                     </div>
 
                     <!-- portfolio 2 -->
-                    <div>
-                        <img src="./img/business-2.jpg" alt="">
-                        <p>JEWELRY</p>
-                        <h3>Quirksmith</h3>
+                    <div class="w-[47%] sm:w-[48%] md:w-[32%] lg:w-[24%] xl:w-[19%]">
+                        <img src="./img/business-2.jpg" alt="" class="mb-3">
+                        <p class="text-sm font-semibold text-white">JEWELRY</p>
+                        <h3 class="text-white">Quirksmith</h3>
                     </div>
 
                     <!-- portfolio 3 -->
-                    <div>
-                        <img src="./img/business-3.jpg" alt="">
-                        <p>ELECTRONICS</p>
-                        <h3>Crossbeats</h3>
+                    <div class="w-[47%] sm:w-[48%] md:w-[32%] lg:w-[24%] xl:w-[19%]">
+                        <img src="./img/business-3.jpg" alt="" class="mb-3">
+                        <p class="text-sm font-semibold text-white">ELECTRONICS</p>
+                        <h3 class="text-white">Crossbeats</h3>
                     </div>
 
                     <!-- portfolio 4 -->
-                    <div>
-                        <img src="./img/business-4.jpg" alt="">
-                        <p>BEAUTY</p>
-                        <h3>Mcaffeine</h3>
+                    <div class="w-[47%] sm:w-[48%] md:hidden lg:block  lg:w-[24%] xl:w-[19%]">
+                        <img src="./img/business-4.jpg" alt="" class="mb-3">
+                        <p class="text-sm font-semibold text-white">BEAUTY</p>
+                        <h3 class="text-white">Mcaffeine</h3>
                     </div>
 
                     <!-- portfolio 5 -->
-                    <div>
-                        <img src="./img/business-5.jpg" alt="">
-                        <p>FASHION</p>
-                        <h3>Bunnai</h3>
+                    <div class="w-[47%] sm:w-[48%] hidden xl:block xl:w-[19%]">
+                        <img src="./img/business-5.jpg" alt="" class="mb-3">
+                        <p class="text-sm font-semibold text-white">FASHION</p>
+                        <h3 class="text-white">Bunnai</h3>
                     </div>
                 </main>
 
 
                 <!--* Service Heading -->
-                <div class="service-heading">
-                    <h2>Take the best path forward</h2>
+                <div class="service-heading mb-10 2xl:mb-14">
+                    <h2 class="text-2xl text-white xl:text-3xl">Take the best path forward</h2>
                 </div>
 
                 <!--* Services Container -->
-                <main class="service">
+                <main class="service md:flex flex-wrap justify-between">
                     <!-- service 1 -->
-                    <div>
-                        <img src="./img/business-1-icon.svg" alt="">
-                        <h3>Start an online business</h3>
-                        <p>Create a business, whether you’ve got a fresh idea or are looking for a new way to make
+                    <div class="mb-10 md:w-[48%] xl:w-[24%] xl:mb-0 ">
+                        <img src="./img/business-1-icon.svg" alt="" class="mb-4">
+                        <h3 class="text-white font-semibold mb-2">Start an online business</h3>
+                        <p class="text-white">Create a business, whether you’ve got a fresh idea or are looking for a
+                            new way to make
                             money.</p>
                     </div>
 
                     <!-- service 2 -->
-                    <div>
-                        <img src="./img/business-2-icon.svg" alt="">
-                        <h3>Move your business online</h3>
-                        <p>Turn your retail store into an online store and keep serving customers without missing a
+                    <div class="mb-10 md:w-[48%] xl:w-[24%] xl:mb-0 ">
+                        <img src="./img/business-2-icon.svg" alt="" class="mb-4">
+                        <h3 class="text-white font-semibold mb-2">Move your business online</h3>
+                        <p class="text-white">Turn your retail store into an online store and keep serving customers
+                            without missing a
                             beat.
                         </p>
                     </div>
 
                     <!-- service 3 -->
-                    <div>
-                        <img src="./img/business-3-icon.svg" alt="">
-                        <h3>Switch to Shopify</h3>
-                        <p>Bring your business to Shopify, no matter which ecommerce platform you’re currently using.
+                    <div class="mb-10 md:w-[48%] xl:w-[24%]  xl:mb-0">
+                        <img src="./img/business-3-icon.svg" alt="" class="mb-4">
+                        <h3 class="text-white font-semibold mb-2">Switch to Shopify</h3>
+                        <p class="text-white">Bring your business to Shopify, no matter which ecommerce platform you’re
+                            currently using.
                         </p>
                     </div>
 
                     <!-- service 4 -->
-                    <div>
-                        <img src="./img/business-4-icon.svg" alt="">
-                        <h3>Hire a Shopify expert</h3>
-                        <p>Get set up with the help of a trusted freelancer or agency from the Shopify Experts
+                    <div class="mb-10 md:w-[48%] xl:w-[24%]  xl:mb-0">
+                        <img src="./img/business-4-icon.svg" alt="" class="mb-4">
+                        <h3 class="text-white font-semibold mb-2">Hire a Shopify expert</h3>
+                        <p class="text-white">Get set up with the help of a trusted freelancer or agency from the
+                            Shopify Experts
                             Marketplace.
 
                         </p>
                     </div>
                 </main>
-
-
             </div>
             <!--! Business Container End -->
         </section>
         <!--/ Business Section End -->
+
+
+        <!--/ Sell Section  -->
+        <section class="sell py-16 md:py-20 xl:py-20 2xl:py-24">
+
+            <!--! Sell Section Wrapper  -->
+            <div class="sell-wrapper max-w-[1100px] mx-auto  px-5 sm:px-8 md:px-12 lg:px-16 2xl:px-0">
+
+                <!--. Sell heading -->
+                <div class="text-center mb-16 xl:mb-20">
+                    <h2 class="text-[28px] mb-5 text-headingColor xl:text-[40px] xl:mb-3">With you wherever you’re going
+                    </h2>
+                    <p class="text-paraColor text-lg md:w-[80%] md:mx-auto xl:text-xl xl:w-[65%]">One platform with all
+                        the
+                        ecommerce and
+                        point of sale features you
+                        need to
+                        start, run, and grow
+                        your business.</p>
+                </div>
+
+                <!--. Sell container -->
+                <main class="flex flex-col-reverse mb-16 xl:flex-row xl:justify-between xl:mb-20">
+                    <!-- left img -->
+                    <div class="xl:w-[45%]">
+                        <img src="./img/sell-img.jpg" alt="" class="md:w-[90%] md:mx-auto xl:w-[100%]">
+                    </div>
+                    <!-- right content -->
+                    <div class="mb-8 md:w-[80%] md:mx-auto xl:w-[50%] xl:self-center">
+                        <h3 class="text-2xl text-headingColor mb-5">Sell everywhere</h3>
+                        <p class="text-paraColor mb-5">Use one platform to sell products to anyone, anywhere—in person
+                            with
+                            Point of Sale and online
+                            through your website, social media, and online marketplaces.</p>
+                        <div class="text-base text-greenColor font-semibold">
+                            <a href=" #">Explore ways to sell</a>
+                            <i class=" fa-solid fa-arrow-right-long"></i>
+                        </div>
+
+                    </div>
+                </main>
+
+                <!--. Market Business -->
+                <main class="flex flex-col mb-16">
+                    <!-- left content -->
+                    <div class="mb-8 md:w-[80%] md:mx-auto">
+                        <h3 class="text-2xl text-headingColor mb-5">Market your business</h3>
+                        <p class="text-paraColor mb-5">Take the guesswork out of marketing with built-in tools that help
+                            you create, execute, and
+                            analyze digital marketing campaigns.</p>
+                        <div class="text-base text-greenColor font-semibold">
+                            <a href=" #">Explore how to market your business </a>
+                            <i class=" fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <!-- Right img -->
+                    <div>
+                        <img src="./img/market-img.jpg" alt="" class="md:w-[90%] md:mx-auto">
+                    </div>
+                </main>
+
+
+                <!--. Manage everyThing  -->
+                <main class="flex flex-col-reverse ">
+                    <!-- left img -->
+                    <div>
+                        <img src="./img/manage-img.png" alt="" class="md:w-[90%] md:mx-auto">
+                    </div>
+                    <!-- right content -->
+                    <div class="mb-8 md:w-[80%] md:mx-auto">
+                        <h3 class="text-2xl text-headingColor mb-5">Manage everything</h3>
+                        <p class="text-paraColor mb-5">Gain the insights you need to grow—use a single dashboard to
+                            manage orders, shipping, and
+                            payments anywhere you go.</p>
+                        <div class="text-base text-greenColor font-semibold">
+                            <a href=" #">Explore how to manage your business</a>
+                            <i class=" fa-solid fa-arrow-right-long"></i>
+                        </div>
+
+                    </div>
+                </main>
+
+
+            </div>
+            <!--! Sell Section Wrapper End -->
+
+        </section>
+        <!--/ Sell Section End  -->
 
     </div>
     <!--! Big Wrapper End -->
