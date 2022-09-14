@@ -36,12 +36,9 @@
                 list-style-type:none ;
                 cursor: pointer;
                 letter-spacing:.5px;
-                transition:all .2s ease-in;
             }
 
-            li:hover{
-                color:#212326;
-            }
+            
         } 
     </style>
 
@@ -95,14 +92,18 @@
 
                         <!-- nav Menu -->
                         <ul class="flex self-center hidden lg:flex">
-                            <li class="mx-3.5 text-darkPara font-semibold">Start <i
-                                    class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
-                            <li class="mx-3.5 text-darkPara font-semibold">Sell <i
-                                    class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
-                            <li class="mx-3.5 text-darkPara font-semibold">Market <i
-                                    class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
-                            <li class="mx-3.5 text-darkPara font-semibold">Manage <i
-                                    class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
+                            <li class="mx-3.5 text-darkPara font-semibold hover:text-headingColor group">Start <i
+                                    class="fa-solid fa-angle-down text-sm text-paraColor group-hover:text-headingColor"></i>
+                            </li>
+                            <li class="mx-3.5 text-darkPara font-semibold hover:text-headingColor group">Sell <i
+                                    class="fa-solid fa-angle-down text-sm text-paraColor group-hover:text-headingColor"></i>
+                            </li>
+                            <li class="mx-3.5 text-darkPara font-semibold hover:text-headingColor group">Market <i
+                                    class="fa-solid fa-angle-down text-sm text-paraColor group-hover:text-headingColor"></i>
+                            </li>
+                            <li class="mx-3.5 text-darkPara font-semibold hover:text-headingColor group">Manage <i
+                                    class="fa-solid fa-angle-down text-sm text-paraColor group-hover:text-headingColor"></i>
+                            </li>
                         </ul>
                     </div>
 
@@ -110,10 +111,15 @@
                     <div class="navRight flex item-center">
                         <!-- nav menu -->
                         <ul class="flex self-center">
-                            <li class="mx-3.5  text-darkPara font-semibold hidden lg:flex">Pricing</li>
-                            <li class="mx-3.5  text-darkPara font-semibold hidden lg:block">Learn <i
-                                    class="fa-solid fa-angle-down text-sm text-paraColor"></i></li>
-                            <li class="mx-3.5  text-darkPara font-semibold">Log in</li>
+                            <li
+                                class="mx-3.5  text-darkPara font-semibold hidden lg:flex hover:text-headingColor group">
+                                Pricing</li>
+                            <li
+                                class="mx-3.5  text-darkPara font-semibold hidden lg:block hover:text-headingColor group">
+                                Learn <i
+                                    class="fa-solid fa-angle-down text-sm text-paraColor group-hover:text-headingColor"></i>
+                            </li>
+                            <li class="mx-3.5  text-darkPara font-semibold hover:text-headingColor group">Log in</li>
                         </ul>
 
                         <!-- nav button -->
@@ -159,7 +165,7 @@
                             <input type="email" name="email" id="email" placeholder="Enter your email address"
                                 class="w-[100%]  border-solid border-[1.5px]  border-paraColor  rounded p-3 mb-2 focus:outline-none focus:border-none focus:ring-2 focus:ring-greenColor sm:mb-0 sm:w-[67%] xl:w-[70%]">
                             <input type="button" value="Try for free"
-                                class="w-[100%] bg-greenColor p-3 rounded text-white font-semibold shadow-xl sm:w-[30%] xl:w-[27%] hover:bg-midGreen transition-all duration-300 ease-in shadow-xl hover:shadow-2xl">
+                                class="w-[100%] bg-greenColor p-3 rounded text-white font-semibold shadow-xl cursor-pointer sm:w-[30%] xl:w-[27%] hover:bg-midGreen transition-all duration-300 ease-in shadow-xl hover:shadow-2xl">
                         </form>
 
                         <p class="text-xs text-darkPara leading-5 xl:w-[90%]">Try Shopify free for 14 days, no credit
@@ -170,7 +176,7 @@
                             receive marketing emails from Shopify.</p>
                     </div>
                     <!--* Right img -->
-                    <div class="right-img w-[100%] xl:w-[50%]">
+                    <div class="right-img w-[100%] mx-auto sm:w-[90%] lg:w-[80%] xl:w-[50%]">
                         <img src="./img/hero-img.jpg" alt="" class="w-[100%] hidden xl:block">
                         <img src="./img/hero-mobile-img.jpg" alt="" class="w-[100%] xl:hidden">
                     </div>
@@ -199,9 +205,11 @@
                     </div>
 
                     <!-- right -->
-                    <div class="right text-white mb-10 font-semibold 2xl:w-[20%]  2xl:mb-0 self-end 2xl:text-right ">
+                    <div
+                        class="right text-white mb-10 font-semibold 2xl:w-[20%]  2xl:mb-0 self-end 2xl:text-right group ">
                         <a href="#">Explore more examples </a>
-                        <i class=" fa-solid fa-arrow-right-long"></i>
+                        <i
+                            class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                     </div>
                 </main>
 
@@ -210,35 +218,35 @@
                     <!-- portfolio 1 -->
                     <div class="w-[47%] mb-10 sm:w-[48%] md:w-[32%] lg:w-[24%] xl:w-[19%]">
                         <img src="./img/business-1.jpg" alt="" class="mb-3">
-                        <p class="text-sm font-semibold text-white">FOOD & DRINK</p>
+                        <p class="text-sm font-semibold text-white cursor-pointer hover:underline">FOOD & DRINK</p>
                         <h3 class="text-white">Blue Tokai</h3>
                     </div>
 
                     <!-- portfolio 2 -->
                     <div class="w-[47%] sm:w-[48%] md:w-[32%] lg:w-[24%] xl:w-[19%]">
                         <img src="./img/business-2.jpg" alt="" class="mb-3">
-                        <p class="text-sm font-semibold text-white">JEWELRY</p>
+                        <p class="text-sm font-semibold text-white cursor-pointer hover:underline">JEWELRY</p>
                         <h3 class="text-white">Quirksmith</h3>
                     </div>
 
                     <!-- portfolio 3 -->
                     <div class="w-[47%] sm:w-[48%] md:w-[32%] lg:w-[24%] xl:w-[19%]">
                         <img src="./img/business-3.jpg" alt="" class="mb-3">
-                        <p class="text-sm font-semibold text-white">ELECTRONICS</p>
+                        <p class="text-sm font-semibold text-white cursor-pointer hover:underline">ELECTRONICS</p>
                         <h3 class="text-white">Crossbeats</h3>
                     </div>
 
                     <!-- portfolio 4 -->
                     <div class="w-[47%] sm:w-[48%] md:hidden lg:block  lg:w-[24%] xl:w-[19%]">
                         <img src="./img/business-4.jpg" alt="" class="mb-3">
-                        <p class="text-sm font-semibold text-white">BEAUTY</p>
+                        <p class="text-sm font-semibold text-white cursor-pointer hover:underline">BEAUTY</p>
                         <h3 class="text-white">Mcaffeine</h3>
                     </div>
 
                     <!-- portfolio 5 -->
                     <div class="w-[47%] sm:w-[48%] hidden xl:block xl:w-[19%]">
                         <img src="./img/business-5.jpg" alt="" class="mb-3">
-                        <p class="text-sm font-semibold text-white">FASHION</p>
+                        <p class="text-sm font-semibold text-white cursor-pointer hover:underline">FASHION</p>
                         <h3 class="text-white">Bunnai</h3>
                     </div>
                 </main>
@@ -317,7 +325,7 @@
 
 
         <!--/ Sell Section  -->
-        <section class="sell py-16 md:py-20 xl:py-20 2xl:py-24">
+        <section class="sell py-16  md:py-20  2xl:py-24 ">
 
             <!--! Sell Section Wrapper  -->
             <div class="sell-wrapper max-w-[1100px] mx-auto  px-5 sm:px-8 md:px-12 lg:px-16 xl:px-0 ">
@@ -336,10 +344,10 @@
                 </div>
 
                 <!--. Sell container -->
-                <main class="flex flex-col-reverse mb-16 xl:flex-row xl:justify-between xl:mb-20">
+                <main class="flex flex-col-reverse mb-16 xl:flex-row xl:justify-between xl:mb-20 ">
                     <!-- left img -->
                     <div class="xl:w-[50%]">
-                        <img src="./img/sell-img.jpg" alt="" class="md:w-[90%] md:mx-auto xl:w-[100%]">
+                        <img src="./img/sell-img.jpg" alt="" class="sm:w-[90%] mx-auto md:w-[80%] xl:w-[100%]">
                     </div>
                     <!-- right content -->
                     <div class="mb-8 md:w-[80%] md:mx-auto xl:w-[45%] xl:self-center">
@@ -348,9 +356,10 @@
                             with
                             Point of Sale and online
                             through your website, social media, and online marketplaces.</p>
-                        <div class="text-base text-greenColor font-semibold xl:text-lg">
+                        <div class="text-base text-greenColor font-semibold xl:text-lg group">
                             <a href=" #">Explore ways to sell</a>
-                            <i class=" fa-solid fa-arrow-right-long"></i>
+                            <i
+                                class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                         </div>
 
                     </div>
@@ -364,23 +373,24 @@
                         <p class="text-paraColor mb-5">Take the guesswork out of marketing with built-in tools that help
                             you create, execute, and
                             analyze digital marketing campaigns.</p>
-                        <div class="text-base text-greenColor font-semibold xl:text-lg">
+                        <div class="text-base text-greenColor font-semibold xl:text-lg group">
                             <a href=" #">Explore how to market your business </a>
-                            <i class=" fa-solid fa-arrow-right-long"></i>
+                            <i
+                                class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                         </div>
                     </div>
                     <!-- Right img -->
                     <div class="xl:w-[50%]">
-                        <img src="./img/market-img.jpg" alt="" class="md:w-[90%] md:mx-auto xl:w-[100%]">
+                        <img src="./img/market-img.jpg" alt="" class="sm:w-[85%] mx-auto md:w-[75%] xl:w-[100%]">
                     </div>
                 </main>
 
 
                 <!--. Manage everyThing  -->
-                <main class="flex flex-col-reverse mb-16 xl:flex-row xl:justify-between xl:mb-0 ">
+                <main class="flex flex-col-reverse  xl:flex-row xl:justify-between xl:mb-0 ">
                     <!-- left img -->
                     <div class=" xl:w-[50%]">
-                        <img src="./img/manage-img.png" alt="" class="md:w-[90%] md:mx-auto xl:w-[100%]">
+                        <img src="./img/manage-img.png" alt="" class="sm:w-[85%] mx-auto md:w-[75%] xl:w-[100%]">
                     </div>
                     <!-- right content -->
                     <div class="mb-8 md:w-[80%] md:mx-auto xl:w-[40%] xl:self-center">
@@ -388,9 +398,10 @@
                         <p class="text-paraColor mb-5">Gain the insights you need to grow—use a single dashboard to
                             manage orders, shipping, and
                             payments anywhere you go.</p>
-                        <div class="text-base text-greenColor font-semibold  xl:text-lg">
+                        <div class="text-base text-greenColor font-semibold  xl:text-lg group">
                             <a href=" #">Explore how to manage your business</a>
-                            <i class=" fa-solid fa-arrow-right-long"></i>
+                            <i
+                                class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                         </div>
 
                     </div>
@@ -428,9 +439,10 @@
                             store up
                             and running, from
                             choosing a theme to building a fully customized site.</p>
-                        <div class="text-base text-greenColor font-semibold ">
+                        <div class="text-base text-greenColor font-semibold group  inline-block">
                             <a href=" #">Browse Experts in India</a>
-                            <i class=" fa-solid fa-arrow-right-long"></i>
+                            <i
+                                class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                         </div>
                     </div>
 
@@ -447,7 +459,7 @@
         <!--/ Globe section -->
         <section class="globe py-10 md:py-20 xl:py-20 2xl:py-24">
             <!--! Globe Wrapper -->
-            <div class="globe-wrapper max-w-[1200px] mx-auto px-5 sm:px-8 md:px-12 lg:px-16 xl:px-6 2xl:px-0 ">
+            <div class="globe-wrapper max-w-[1350px] mx-auto px-5 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-0 ">
                 <!--.Globe Heading  -->
                 <div class="mb-10">
                     <h2 class="text-2xl text-headingColor mb-8 lg:text-3xl lg:w-[50%]">Empowering independent business
@@ -461,9 +473,10 @@
                         have made over <span class="font-bold"> $496
                             billion USD</span> in
                         sales using Shopify.</h3>
-                    <div class="text-base text-greenColor font-semibold ">
+                    <div class="text-base text-greenColor font-semibold group inline-block">
                         <a href=" #">Learn more about Shopify</a>
-                        <i class=" fa-solid fa-arrow-right-long"></i>
+                        <i
+                            class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                     </div>
                 </div>
 
@@ -572,9 +585,10 @@
                                     issues or
                                     looking for business
                                     advice.</p>
-                                <div class="text-base text-greenColor font-semibold  mb-14">
+                                <div class="text-base text-greenColor font-semibold  mb-14 group inline-block">
                                     <a href=" #">Contact support</a>
-                                    <i class=" fa-solid fa-arrow-right-long"></i>
+                                    <i
+                                        class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                                 </div>
                             </div>
 
@@ -585,9 +599,10 @@
                                     6,000+
                                     apps that integrate
                                     directly with Shopify.</p>
-                                <div class="text-base text-greenColor font-semibold  mb-14">
+                                <div class="text-base text-greenColor font-semibold  mb-14 group inline-block">
                                     <a href=" #">Visit the Shopify App Store</a>
-                                    <i class=" fa-solid fa-arrow-right-long"></i>
+                                    <i
+                                        class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                                 </div>
                             </div>
 
@@ -599,9 +614,10 @@
                                     everything from
                                     store
                                     setup to SEO.</p>
-                                <div class="text-base text-greenColor font-semibold ">
+                                <div class="text-base text-greenColor font-semibold group inline-block">
                                     <a href=" #">Explore the Shopify Experts Marketplace</a>
-                                    <i class=" fa-solid fa-arrow-right-long"></i>
+                                    <i
+                                        class=" fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-all duration-300 ease-in-out"></i>
                                 </div>
                             </div>
                         </main>
@@ -646,8 +662,8 @@
 
                 <!--. Footer Nav -->
                 <main class="py-5 flex flex-wrap justify-evenly md:justify-start">
-                    <li class="text-white text-sm px-1 mb-2 md:mr-4">
-                        <a href="#" class="font-semibold">About</a>
+                    <li class="text-white text-sm px-1 mb-2 md:mr-4 ">
+                        <a href="#" class="font-semibold ">About</a>
                     </li>
 
                     <li class="text-white text-sm px-1 mb-2 md:mr-4">
@@ -678,45 +694,63 @@
                     <div class="w-[48%] md:w-[14%]">
                         <h3 class="font-bold text-sm mb-2 text-white">ONLINE STORE</h3>
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Sell online</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText hover:text-white transition-all duration-200 ease-in-out">Sell
+                                online</a>
                         </li>
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Features</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Examples</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Website builder</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText hover:text-white transition-all duration-200 ease-in-out">Features</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Online retail</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Examples</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Website
+                                builder</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Online
+                                retail</a>
                         </li>
                     </div>
 
                     <!--. block 2 -->
                     <div class="w-[48%] md:w-[14%] ">
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Ecommerce website</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Ecommerce
+                                website</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Domain names</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Domain
+                                names</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Themes</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Themes</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Shopping cart</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Shopping
+                                cart</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Ecommerce hosting</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Ecommerce hosting</a>
                         </li>
                     </div>
 
@@ -724,24 +758,34 @@
                     <!--. block 3 -->
                     <div class="w-[48%] mb-7 md:w-[14%] md:mb-0 ">
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Mobile commerce</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Mobile
+                                commerce</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Ecommerce software</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Ecommerce
+                                software</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Online store builder</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Online store builder</a>
                         </li>
 
                         <li>
 
-                            <a href="#" class="text-xs mb-2 text-footText">Dropshipping Business</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Dropshipping
+                                Business</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Store themes</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Store themes</a>
                         </li>
                     </div>
 
@@ -751,11 +795,14 @@
                         <h3 class="font-bold text-sm mb-2 text-white">POINT OF SALE</h3>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Point of sale</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Point
+                                of sale</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Features</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Features</a>
                         </li>
 
                     </div>
@@ -766,47 +813,68 @@
                         <h3 class="font-bold text-sm mb-2 text-white">SUPPORT</h3>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">24/7 support</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">24/7
+                                support</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Shopify Help Center</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Shopify
+                                Help Center</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Shopify Community</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Shopify
+                                Community</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">API documentation</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">API
+                                documentation</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Free tools</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Free tools</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Free stock photos</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Free stock photos</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Websites for sale</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Websites
+                                for sale</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Logo Maker</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Logo Maker</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Business name generator</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Business name generator</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Research</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Research</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> Legal</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                Legal</a>
                         </li>
                     </div>
 
@@ -816,31 +884,43 @@
                         <h3 class="font-bold text-sm mb-2 text-white">SHOPIFY</h3>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Contact</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Contact</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Partner program</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Partner
+                                program</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Affiliate program</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Affiliate
+                                program</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText"> App developers</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">
+                                App developers</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Investors</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Investors</a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Blog topics </a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Blog
+                                topics </a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-xs mb-2 text-footText">Community Events</a>
+                            <a href="#"
+                                class="text-xs mb-2 text-footText  hover:text-white transition-all duration-200 ease-in-out">Community
+                                Events</a>
                         </li>
                     </div>
                 </main>
@@ -862,9 +942,13 @@
 
                     <!-- copyrights -->
                     <div class="flex flex-wrap justify-center ">
-                        <a href="#" class="text-paraColor mb-4 mx-2  md:mb-0">Terms of Service </a>
-                        <a href="#" class="text-paraColor mb-4 mx-2 md:mb-0">Privacy Policy</a>
-                        <a href="#" class="text-white sm:mx-2">
+                        <a href="#"
+                            class="text-paraColor mb-4 mx-2  md:mb-0  hover:text-white transition-all duration-300 ease-in-out">Terms
+                            of Service </a>
+                        <a href="#"
+                            class="text-paraColor mb-4 mx-2 md:mb-0  hover:text-white transition-all duration-300 ease-in-out">Privacy
+                            Policy</a>
+                        <a href="#" class="text-white mx-2">
                             <i class="fa-solid fa-globe"></i>
                             India
                             <i class="fa-solid fa-caret-down"></i>
